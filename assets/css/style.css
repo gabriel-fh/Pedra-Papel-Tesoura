@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --title-color: #fff;
+    --header-color: #19415A;
+    --text-color: rgb(4, 83, 83);
+    --footer-text-color: #fff;
+    --body-color: #fff;
+    --footer-color: #242424;
+    /* #106b87
+    #157a8c */
+
+}
+body{
+    background-color: var(--body-color);
+}
+.header{
+    height: 12vh;
+    width: 100vw;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--header-color);
+}
+.header h1{
+    font-family: 'Poppins', sans-serif;
+    color: var(--title-color);
+}
+.container{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container>*:first-child{
+    margin: 50px auto;
+}
+.title{
+    font-size: 2.1em;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    font-weight: bold;
+}
+.btn-container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 40vh;
+    width: 70vw;
+}
+.option{
+    cursor: pointer;
+    margin: 0 20px;
+    height: 35vh;
+    width: 25vw;
+    border: none;
+    background-color: var(--body-color);
+}
+.option img{
+    width: 15vw;
+    height: 25vh;
+    transition: .5s;
+}
+.option img:hover{
+    scale: 1.1;
+    filter: drop-shadow(2px 2px 7px #000);
+}
+.option p{
+    font-size: 37px;
+    margin-top: 25px;
+    font-weight: 600;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    background-color:var(--footer-color);
+}
+.footer p{
+    color: var(--footer-text-color)
+}
+.footer a{
+    text-decoration: none;
+    color: var(--footer-text-color)
+}
