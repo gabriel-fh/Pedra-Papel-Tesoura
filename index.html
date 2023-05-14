@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedra, Papel, Tesoura</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
     <header class="header">
@@ -17,23 +18,42 @@
                 <h2 class='title'>Escolha sua jogada:</h2>
             </div>
             <div class="btn-container">
-                <button class="option" onclick="play('rock')">
-                    <img class="rock" src="assets/images/rock.png" alt="">
-                    <p class="pRock">Pedra</p>
+                <button class="choice">
+                    <img src="assets/images/rock.png" title="Pedra" class="rock">
+                    <p class="rock">Pedra</p>
                 </button>
-                <button class="option papper" onclick="play('rock')">
-                    <img src="assets/images/papper.png" alt="">
-                    <p>Papel</p>
+                <button class="choice paper">
+                    <img src="assets/images/paper.png" title="papel" class="paper">
+                    <p class="paper">Papel</p>
                 </button>
-                <button class="option scissors" onclick="play('rock')">
-                    <img src="assets/images/scissors.png" alt="">
-                    <p>Tesoura</p>
+                <button class="choice scissors">
+                    <img src="assets/images/scissors.png" title="Tesoura" class="scissors">
+                    <p class="scissors">Tesoura</p>
                 </button>
+            </div>
+            <div class="result-container hidden">
+                <div class="result">
+                    <div class="result-title">
+                        <h2>Resultado</h2>
+                    </div>
+                    <div class="resultChoice">
+                        <div class="userChoice">
+                            <img id="userChoice" src="" title=""> 
+                            <p>Sua Escolha</p>
+                        </div>
+                        <div class="computerChoice">
+                            <img id="computerChoice" src="" title="">
+                            <p>Escolha do PC</p>
+                        </div>
+                    </div>
+                    <span class="finalResult"></span>
+                    <button class="tryAgain"><i class="bi bi-arrow-counterclockwise"></i></button>
+                </div>
             </div>
         </div>
     </main>
     <footer class="footer">
-        <p>Pedra, Papel, Tesoura - O Jogo © 2023 - Todos os direitos reservados | Desenvolvido por: <a href="https://github.com/gabriel-fh">Gabriel F. Hermenegildo</a></p>
+        <p>Pedra, Papel, Tesoura - O Jogo &copy; 2023 - Todos os direitos reservados | Desenvolvido por: <a href="https://github.com/gabriel-fh">Gabriel F. Hermenegildo</a></p>
     </footer>
     <script src="assets/js/script.js"></script>
 </body>
